@@ -1,0 +1,136 @@
+/* Font */
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap'); */
+@font-face {
+  font-family: "Inter", sans-serif;
+  src: url(assets/fonts/Inter-VariableFont_slntwght.ttf) format("truetype"),
+    /* do I need all of these files, or just the one above? */
+    url(assets/fonts/static/Inter-Bold.ttf) format("truetype"),
+    url(assets/fonts/static/Inter-Regular.ttf) format("truetype"),
+    url(assets/fonts/static/Inter-SemiBold.ttf) format("truetype");
+}
+
+/* Variables */
+:root {
+  /* colors */
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+}
+
+body {
+  /* Should I include a backup? maybe a local font or the google imported one? */
+  font-family: "Inter", sans-serif;
+  background-color: var(--grey-900);
+  color: var(--white);
+}
+
+/* Typography */
+.text-preset-01 {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+.text-preset-02 {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+.text-preset-03 {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-weight: bold;
+}
+.bold {
+    font-weight: 600;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--grey-800);
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+}
+/* set margins to 0 for control over spacing  */
+.card h2,
+p,
+h3 {
+  margin: 0;
+}
+.card .avatar {
+  border-radius: 50%;
+  width: 5.5rem;
+}
+.card h2 {
+  padding-top: 1.5rem;
+}
+.card .location {
+  padding-top: 0.25rem;
+  color: var(--green);
+}
+.card .description {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.card .stack {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+}
+
+.card .button {
+  background-color: var(--grey-700);
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.card .button:hover {
+  background-color: var(--green);
+  color: var(--grey-700);
+}
+
+.card .button a {
+  text-decoration: none;
+}
+
+footer {
+  height: 2rem;
+}
+
+/* media queries desktop 24rem, tablet 768 px 28.5rem, mobile (default) 1.5rem padding on container  */
+@media (min-width: 650px) {
+  .card {
+    width: 28.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .card {
+    width: 24rem;
+  }
+}
+
+/* Front End Mentor Stuff */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
