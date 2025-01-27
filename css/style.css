@@ -62,7 +62,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: var(--grey-800);
-  padding: 1.5rem;
+  padding: 2.5rem;
   border-radius: 0.75rem;
 }
 /* set margins to 0 for control over spacing  */
@@ -97,7 +97,7 @@ h3 {
   background-color: var(--grey-700);
   width: 100%;
   text-align: center;
-  padding: 0.25rem;
+  padding: 0.5rem;
   border-radius: 0.5rem;
   cursor: pointer;
 }
