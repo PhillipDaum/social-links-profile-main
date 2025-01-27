@@ -16,23 +16,64 @@
   </head>
   <body>
     <main class="container">
-      <div class="card">
-        <img
-          class="avatar"
-          src="./assets/images/avatar-jessica.jpeg"
-          alt="Jessica Randall"
-        />
-        <h2 class="text-preset-01">Jessica Randall</h2>
-        <h3 class="text-preset-02 location">London, United Kingdom</h3>
-        <p class="text-preset-02 description">"Front-end developer and avid reader."</p>
-        <div class="stack">
-          <p class="text-preset-02 bold button"><a target="_blank" href="https://github.com/" aria-label="Visit Jessica's GitHub profile">GitHub</a></p>
-          <p class="text-preset-02 bold button"><a target="_blank" href="https://www.frontendmentor.io/" aria-label="Visit Jessica's Frontend Mentor profile">Frontend Mentor</a></p>
-          <p class="text-preset-02 bold button"><a target="_blank" href="https://www.linkedin.com/" aria-label="Visit Jessica's LinkedIn profile">LinkedIn</a></p>
-          <p class="text-preset-02 bold button"><a target="_blank" href="https://x.com/" aria-label="Visit Jessica's Twitter profile">Twitter</a></p>
-          <p class="text-preset-02 bold button"><a target="_blank" href="https://www.instagram.com/" aria-label="Visit Jessica's Instagram profile">Instagram</a></p>
-        </div>
-      </div>
+      <article class="card" aria-labelledby="profile-name">
+        <header>
+          <img
+            class="avatar"
+            src="./assets/images/avatar-jessica.jpeg"
+            alt="Jessica Randall"
+          />
+          <h2 class="text-preset-01">Jessica Randall</h2>
+          <p class="text-preset-02 location bold">London, United Kingdom</p>
+        </header>
+        <section class="description">
+          <p class="text-preset-02">"Front-end developer and avid reader."</p>
+        </section>
+        <nav>
+          <ul>
+            <li class="text-preset-02 bold">
+              <a
+                target="_blank"
+                href="https://github.com/"
+                rel="noopener noreferrer"
+                >GitHub</a
+              >
+            </li>
+            <li class="text-preset-02 bold">
+              <a
+                target="_blank"
+                href="https://www.frontendmentor.io/"
+                rel="noopener noreferrer"
+                >Frontend Mentor</a
+              >
+            </li>
+            <li class="text-preset-02 bold">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/"
+                rel="noopener noreferrer"
+                >LinkedIn</a
+              >
+            </li>
+            <li class="text-preset-02 bold">
+              <a
+                target="_blank"
+                href="https://x.com/"
+                rel="noopener noreferrer"
+                >Twitter</a
+              >
+            </li>
+            <li class="text-preset-02 bold">
+              <a
+                target="_blank"
+                href="https://www.instagram.com/"
+                rel="noopener noreferrer"
+                >Instagram</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </article>
     </main>
   </body>
 </html>
