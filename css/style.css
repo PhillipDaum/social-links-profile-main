@@ -97,7 +97,7 @@ h3 {
   background-color: var(--grey-700);
   width: 100%;
   text-align: center;
-  padding: 0.5rem;
+  padding: 0.25rem;
   border-radius: 0.5rem;
   cursor: pointer;
 }
